@@ -1,146 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: #fff;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
+@import url(reset.css);
 
 /*
 =========================================================
@@ -157,6 +15,7 @@ body {
 ===================*/
 .header {
     height: 100px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -178,7 +38,7 @@ body {
 
 /* Nav 
 ===================*/
-.nav {
+nav {
     padding-top: 40px;
     display: flex;
     font-size: 17px;
@@ -204,10 +64,10 @@ body {
 /* Intro 
 ===================*/
 .intro {
-    position: relative;
     height: 720px;
     width: 100%;
     background: url(img/block1.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .intro__name {
@@ -235,13 +95,9 @@ body {
 
 .introtext {
     max-width: 600px;
-    position: absolute;
-    margin-top: 185px;
+    margin-top: 100px;
     z-index: 1001;
-}
-
-#button2 {
-    margin-top: 20px;
+    display: block;
 }
 
 /* Second Block 
@@ -249,18 +105,19 @@ body {
 .navblock2 {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .nav__button2 {
-    margin-top: 30px;
+    margin: 30px 50px 0 0;
     color: #f38b83;
     text-decoration: none;
     text-align: center;
-    margin-right: 50px;
     padding: 15px 50px;
     background-color: white;
     border: 1.75px solid #f38b83;
-    width: 25%;
+    width: 250px;
     border-radius: 100px;
 }
 
@@ -279,6 +136,7 @@ body {
 
 .secondblock {
     height: 720px;
+    width: 100%;
 }
 
 .name {
@@ -311,16 +169,16 @@ body {
 }
 
 .slider__item {
-    margin-top: 50px;
-    width: 17%;
-    margin-right: 20px;
-    margin-left: 0px;
+    margin: 50px 20px 0 0;
+    width: 199px;
     text-align: center;
     transition: 1s;
 }
+
 .slider__item:hover {
-transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 .slider__item:nth-child(5) {
     margin-right: 0px;
 }
@@ -332,6 +190,7 @@ transform: scale(1.05);
     border-radius: 70px 70px 70px 70px;
     overflow: hidden;
 }
+
 .cupcakeimg2 {
     max-height: 100%;
     max-width: 100%;
@@ -380,7 +239,7 @@ transform: scale(1.05);
     height: 500px;
 }
 
-.thirdblock_item_case {
+.thirdblock_item {
     height: 340px;
     width: 285px;
     background-image: url(img/third_block_item1.png);
@@ -410,7 +269,6 @@ transform: scale(1.05);
 
 #itemsblock3 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
 }
@@ -425,6 +283,7 @@ transform: scale(1.05);
     display: flex;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .photocase {
@@ -433,8 +292,9 @@ transform: scale(1.05);
     border: 2px solid pink;
     transition: 1s;
 }
+
 .photocase:hover {
-transform: scale(1.06);
+    transform: scale(1.06);
 }
 
 #photo1 {
@@ -449,11 +309,14 @@ transform: scale(1.06);
     background-image: url(img/photo3.png);
 }
 
+/* Fifth Block 
+===================*/
 .fifthblock {
     position: relative;
     height: 720px;
     width: 100%;
     background: url(img/5block.png) center no-repeat;
+    background-size: cover;
     margin-top: 40px;
 }
 
@@ -472,27 +335,21 @@ transform: scale(1.06);
     font-family: 'Comfortaa', cursive;
 }
 
-.your_name {
-    background-color: rgba(0, 120, 201, 0.0);
-    outline: none;
-    border: 1.5px solid white;
-    padding: 20px 230px 20px 5px;
-    color: white;
-    margin-top: 50px;
-    font-size: 15px;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-    color: white;
-    font-size: 15px;
-}
-
+.your_name,
 .your_phone {
     background-color: rgba(0, 120, 201, 0.0);
     outline: none;
     border: 1.5px solid white;
     padding: 20px 230px 20px 5px;
     color: white;
+}
+
+.your_name {
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.your_phone {
     margin-top: 25px;
     font-size: 15px;
     margin-bottom: 15px;
@@ -512,6 +369,11 @@ input[type="text"]::-webkit-input-placeholder {
     cursor: pointer;
 }
 
+input[type="text"]::-webkit-input-placeholder {
+    color: white;
+    font-size: 15px;
+}
+
 .button1 {
     position: relative;
 }
@@ -521,25 +383,201 @@ input[type="text"]::-webkit-input-placeholder {
     margin-left: -60px;
     margin-bottom: 10px;
 }
+
+/* Sixth Block 
+===================*/
 footer {
-height: 170px;
+    height: 170px;
 }
+
 .columns {
-display: flex;
-justify-content: space-between;
-margin-top: 80px;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: center;
 }
+
 .column {
-font-family: 'Open Sans', sans-serif;
-font-size: 17px;
-line-height: 1.75;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
 }
+
 .tnumber {
-font-weight: 700;
-font-size: 19px;
+    font-weight: 700;
+    font-size: 19px;
 }
+
 .footerlink {
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
+}
+
+/* Media 
+===================*/
+@media (max-width: 1224px) {
+    .intro {
+        height: auto;
+        padding: 0 20px;
+        padding-bottom: 130px;
+    }
+
+    #itemsblock3 {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .secondblock {
+        height: auto;
+    }
+
+    .thirdblock {
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .fourthblock {
+        height: auto;
+        padding: 20px;
+    }
+
+    .fifthblock {
+        height: auto;
+        padding: 20px;
+    }
+
+    .columns {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #photo3 {
+        margin-left: 70px;
+    }
+
+    .slider {
+        justify-content: center;
+    }
+
+    #lastitem2 {
+        margin-right: 50px;
+    }
+
+    .thirdblock_item {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .intro,
+    .secondblock,
+    .thirdblock,
+    .fourthblock,
+    .fifthblock {
+        padding-left: 15px;
+    }
+
+    .introtext {
+        max-width: 60%;
+    }
+
+    #photo3 {
+        margin-left: 0;
+    }
+
+    .photo {
+        flex-direction: column;
+    }
+
+    .heading5,
+    .subtitle5 {
+        max-width: 50%;
+    }
+
+    #itemblock3 {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .secondblock {
+        padding-right: 30px;
+    }
+
+    #lastitem2 {
+        margin: 0 auto;
+    }
+
+    .name {
+        margin-bottom: 10px;
+    }
+
+    .nav__button2 {
+        margin: 0 auto 5px auto;
+        flex-direction: column;
+        width: 51%;
+        padding-bottom: 10px;
+    }
+
+    #main__menu {
+        display: none;
+    }
+}
+
+@media (max-width: 496px) {
+    .cupcakebutton {
+        display: none;
+    }
+
+    .button {
+        padding: 15px 55px;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+
+    #lastitem2 {
+        margin-bottom: 20px;
+    }
+
+    #left_arrow3 {
+        margin-bottom: -50px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .photocase {
+        max-width: 100%;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instalogo {
+        margin-left: 10px;
+    }
+
+    .your_name,
+    .your_phone {
+        padding: 10px 115px 10px 5px;
+    }
 }
