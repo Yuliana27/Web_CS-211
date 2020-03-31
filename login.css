@@ -16,7 +16,7 @@
     background-color: rgba(0, 120, 201, 0.0);
     outline: none;
     border: 1.5px solid white;
-    padding: 4% 40% 20px 5px;
+    padding: 20px 40% 20px 5px;
     color: white;
     margin-top: 20px;
     font-size: 15px;
@@ -24,13 +24,14 @@
 
 .registrationblock {
     padding-top: 50px;
+    max-width: 50%;
 }
 
 .email {
     background-color: rgba(0, 120, 201, 0.0);
     outline: none;
     border: 1.5px solid white;
-    padding: 4% 40% 20px 5px;
+    padding: 20px 40% 20px 5px;
     color: white;
     margin-top: 30px;
     font-size: 15px;
@@ -47,7 +48,7 @@
     background-color: rgba(0, 120, 201, 0.0);
     outline: none;
     border: 1.5px solid white;
-    padding: 4% 40% 20px 5px;
+    padding: 20px 40% 20px 5px;
     color: white;
     margin-top: 30px;
     font-size: 15px;
@@ -58,7 +59,7 @@
     background-color: rgba(0, 120, 201, 0.0);
     outline: none;
     border: 1.5px solid white;
-    padding: 4% 40% 20px 5px;
+    padding: 20px 40% 20px 5px;
     color: white;
     margin-top: 30px;
     font-size: 15px;
