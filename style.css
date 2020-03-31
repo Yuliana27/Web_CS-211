@@ -413,6 +413,53 @@ footer {
     color: black;
 }
 
+
+/* Burger 
+===================*/
+.menub ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.menub ul a {
+    margin-left: 10px;
+}
+
+.menub {
+    display: none;
+}
+
+.trigger {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.trigger i {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #fff;
+}
+
+.show {
+    display: block;
+}
+
+.burger_nav {
+    display: none;
+    position: absolute;
+    top: 8%;
+    left: 80%;
+}
+
+.burger_items {
+    padding-top: 10px;
+}
+
 /* Media 
 ===================*/
 @media (max-width: 1224px) {
@@ -537,6 +584,10 @@ footer {
 
     #main__menu {
         display: none;
+    }
+
+    .burger_nav {
+        display: inline-block;
     }
 }
 
