@@ -51,7 +51,6 @@ nav {
     opacity: 0.75;
     margin-left: 50px;
     font-size: 30px;
-    
 }
 
 .nav__link:hover {
@@ -88,7 +87,7 @@ nav {
 }
 
 .text {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-family: 'Open Sans', cursive;
     font-weight: 400;
@@ -157,7 +156,6 @@ nav {
 
 .subtitle {
     margin-top: 5px;
-    font-size: 20px;
 }
 
 .line {
@@ -443,13 +441,12 @@ footer {
     margin: 3px;
     cursor: pointer;
     position: relative;
-    padding-left: 270px;
 }
 
 .trigger i {
     display: block;
-    width: 40px;
-    height: 10px;
+    width: 30px;
+    height: 6px;
     margin: 4px auto;
     background: #fff;
 }
@@ -473,18 +470,11 @@ footer {
 .burger_items {
     padding-top: 33px;
 }
-.menub{
-    padding-top: 33px;
-}
 
 .nav__link__burger {
     text-decoration: none;
     color: white;
-    font-size: 35px;
-    padding-left: 90px;
-}
-.logo{
-    margin-bottom: 50px;
+    font-size: 25px;
 }
 
 /* Media 
@@ -612,13 +602,17 @@ footer {
     #main__menu {
         display: none;
     }
+    
+    .text{
+        display: none;
+    }
 
     .intro__sname {
         display: none;
     }
 
     .text {
-        display: none;
+        margin-top: 30px;
     }
 
     .burger_nav {
