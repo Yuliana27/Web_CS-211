@@ -50,7 +50,6 @@ nav {
     text-decoration: none;
     opacity: 0.75;
     margin-left: 50px;
-    font-size: 30px;
 }
 
 .nav__link:hover {
@@ -426,14 +425,17 @@ footer {
 .left-side {
     position: absolute;
     background: #f5ad9b;
-    opacity: 1;
-    width: 640px;
+    width: 100%;
     display: flex;
+    text-align: center;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .menub {
     display: none;
+    width: 100%;
+    border: 1.5px solid white;
 }
 
 .trigger {
@@ -441,6 +443,7 @@ footer {
     margin: 3px;
     cursor: pointer;
     position: relative;
+    margin-left: 50px;
 }
 
 .trigger i {
@@ -455,16 +458,12 @@ footer {
     display: block;
 }
 
-.show2 {
-    left: -100px;
-}
-
 .burger_nav {
     display: none;
     position: absolute;
     top: 8%;
-    left: 10%;
     z-index: 1001;
+    width: 100%;
 }
 
 .burger_items {
@@ -602,17 +601,13 @@ footer {
     #main__menu {
         display: none;
     }
-    
-    .text{
-        display: none;
-    }
 
     .intro__sname {
         display: none;
     }
-
+    
     .text {
-        margin-top: 30px;
+        display: none;
     }
 
     .burger_nav {
