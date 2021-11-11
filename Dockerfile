@@ -9,7 +9,7 @@
  COPY 4.png /usr/share/nginx/html
  COPY 5block.png /usr/share/nginx/html
  COPY arrow.png /usr/share/nginx/html
- COPY block1.png /usr/share/nginx/html
+ COPY block1.jpg /usr/share/nginx/html
  COPY block2line.png /usr/share/nginx/html
  COPY car.png /usr/share/nginx/html
  COPY courier.png /usr/share/nginx/html
