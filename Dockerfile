@@ -2,6 +2,7 @@
 
  COPY index.html /usr/share/nginx/html
  COPY style.css /usr/share/nginx/html
+ COPY style2.css /usr/share/nginx/html
  COPY logo.png /usr/share/nginx/html
  COPY 1.png /usr/share/nginx/html
  COPY 2.png /usr/share/nginx/html
