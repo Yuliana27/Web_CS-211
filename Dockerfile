@@ -25,7 +25,7 @@
  COPY photo1.png /usr/share/nginx/html
  COPY photo2.png /usr/share/nginx/html
  COPY photo3.png /usr/share/nginx/html
- COPY third_block_item_1.png /usr/share/nginx/html
+ COPY third_block_item1.png /usr/share/nginx/html
  
  EXPOSE 80 443     
 
