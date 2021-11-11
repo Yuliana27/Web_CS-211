@@ -203,19 +203,19 @@ nav {
 }
 
 #case1 {
-    background-image: url(img/fruitcupcake.png);
+    background-image: url(fruitcupcake.png);
 }
 
 #case2 {
-    background-image: url(img/fruitcupcake.png);
+    background-image: url(fruitcupcake.png);
 }
 
 #case3 {
-    background-image: url(img/fruitcupcake.png);
+    background-image: url(fruitcupcake.png);
 }
 
 #case4 {
-    background-image: url(img/fruitcupcake.png);
+    background-image: url(fruitcupcake.png);
 }
 
 .right_arrow {
@@ -242,7 +242,7 @@ nav {
 .thirdblock_item {
     height: 340px;
     width: 285px;
-    background-image: url(img/third_block_item1.png);
+    background-image: url(third_block_item1.png);
 }
 
 .icon {
